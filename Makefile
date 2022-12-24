@@ -17,15 +17,16 @@ PKG_MAINTAINER:=eSir Playground
 include $(INCLUDE_DIR)/package.mk
 
 define Package/$(PKG_NAME)
-  CATEGORY:=eSir Playground
-  SUBMENU:=2. GameAcc
+  SECTION:=net
+  CATEGORY:=Network
+  SUBMENU:=3. Applications
   TITLE:=LingTi Game Accelerator
   URL:=https://github.com/esirplayground/LingTiGameAcc
   DEPENDS:=+kmod-tun
 endef
 
 define Package/$(PKG_NAME)/description
-LingTi Game Acc is a Game Accelerator which is paid service.
+  LingTi Game Acc is a Game Accelerator which is paid service.
 endef
 
 DIR_ARCH:=$(ARCH)
